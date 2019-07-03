@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 按钮正常的时候的背景 -->
+<!-- shape的默认形状是rectangle，还有oval(椭圆),line（线）,ring（圆环），我就用过rectangle,其他的大家可以试一试 -->
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="#e6e6e6">
+    <item>
+        <selector>
+            <item android:state_enabled="true">
+                <shape>
+                    <!-- 默认填充色 -->
+                    <solid android:color="#fff"/>
+                </shape>
+            </item>
+            <item android:state_enabled="false">
+                <shape>
+                    <!-- 点击填充色 -->
+                    <solid android:color="#656363"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

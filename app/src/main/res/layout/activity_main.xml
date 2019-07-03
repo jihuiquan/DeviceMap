@@ -1,18 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.example.myapplication.devicemap.MUIDeviceMapView
+        android:id="@+id/dmv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
     <TextView
+        android:id="@+id/current_bt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dimen_common_12px"
+        android:layout_marginBottom="@dimen/dimen_common_40px"
+        android:background="@drawable/draw_device_dash_bt"
+        android:drawableLeft="@mipmap/mui_ic_device_position"
+        android:drawablePadding="@dimen/dimen_common_12px"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_common_12px"
+        android:paddingTop="@dimen/dimen_common_8px"
+        android:paddingRight="@dimen/dimen_common_12px"
+        android:paddingBottom="@dimen/dimen_common_8px"
+        android:text="返回当前"
+        android:textColor="#fff"
+        android:textSize="12sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/show_dialog_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dimen_common_36px"
+        android:layout_marginRight="@dimen/dimen_common_24px"
+        android:background="@drawable/draw_device_dash_bt"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_common_6px"
+            android:text="AI防倾斜"
+            android:textColor="#fff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_common_1px"
+            android:layout_margin="@dimen/dimen_common_6px"
+            android:background="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_common_16px"
+            android:layout_marginRight="@dimen/dimen_common_16px"
+            android:layout_marginBottom="@dimen/dimen_common_6px"
+            android:text="吊钩可视化"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <com.example.myapplication.devicemap.MUIDeviceLiveCardview
+        android:id="@+id/dialog_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dimen_common_36px"
+        android:layout_marginRight="@dimen/dimen_common_24px"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/mui_color_dash_bg"
+        app:cardCornerRadius="@dimen/dimen_common_16px" />
+
+</RelativeLayout>

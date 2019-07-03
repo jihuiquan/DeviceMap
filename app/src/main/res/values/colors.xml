@@ -3,4 +3,24 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <!--设备地图-->
+    <color name="mui_gray">#80ECECEC</color>
+    <color name="mui_gray_main">#C4C1C1</color>
+    <color name="mui_gray_main_text">#6B6B6B</color>
+    <color name="mui_gray_main_line">#DBDBDB</color>
+    <color name="mui_color_green_33">#262FFD0B</color>
+    <color name="mui_color_green_4d">#402FFD0B</color>
+    <color name="mui_color_green_10">#1A2FFD0B</color>
+    <color name="mui_color_green">#CC2FFD0B</color>
+    <color name="mui_color_blue">#4C4DAF</color>
+    <color name="mui_color_blue_1a">#0D0441DA</color>
+    <color name="mui_color_red_33">#26FD0B0B</color>
+    <color name="mui_color_red_4d">#40FD0B74</color>
+    <color name="mui_color_red_10">#1AFD1249</color>
+    <color name="mui_color_red">#CCF73939</color>
+    <color name="mui_color_dialog">#008FFF</color>
+    <!--设备地图仪表盘-->
+    <color name="mui_color_dash_bg">#303030</color>
+    <color name="mui_color_dash_text">#FAA200</color>
+    <color name="mui_color_dash_bt">#B3000000</color>
 </resources>
